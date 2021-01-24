@@ -1,4 +1,3 @@
-
 /.vs
 /MyAppDataAccess/bin
 /MyAppDataAccess/obj
@@ -24,4 +23,5 @@
 /MyApp/MyAppWPFLib/bin
 /MyApp/MyAppXUnitTestLib/obj
 /MyApp/MyAppXUnitTestLib/bin
-
+/MyApp/MyAppDataAccessLib/obj
+/MyApp/MyAppDataAccessLib/bin
