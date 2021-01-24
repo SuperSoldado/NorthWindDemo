@@ -1,0 +1,6 @@
+﻿//Headers expected in the response
+//Modifiers starting with: 
+// - (minus) ignore the content but eval the header. Used for dates. Ex.:-[Name]=[Value]
+Server=Microsoft-IIS/10.0 
+X-Powered-By=ASP.NET
+-Date=Thu, 26 Mar 2020 08:13:48 GMT

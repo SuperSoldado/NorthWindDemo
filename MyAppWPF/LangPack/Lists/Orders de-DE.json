@@ -1,0 +1,144 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "OrderID",
+      "TranslatedValue": "ID",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Customers_ContactName",
+      "TranslatedValue": "xCustomers_ContactNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Employees_LastName",
+      "TranslatedValue": "Mitarbeiter Nachname",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "OrderDate",
+      "TranslatedValue": "Bestelldatum",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "RequiredDate",
+      "TranslatedValue": "Erforderliches Datum",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShippedDate",
+      "TranslatedValue": "Versanddatum",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Shippers_CompanyName",
+      "TranslatedValue": "Shippers Firmenname",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Freight",
+      "TranslatedValue": "Fracht",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipName",
+      "TranslatedValue": "xShipNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipAddress",
+      "TranslatedValue": "Lieferadresse",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipCity",
+      "TranslatedValue": "Lieferstadt",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipRegion",
+      "TranslatedValue": "Lieferregion",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipPostalCode",
+      "TranslatedValue": "Postleitzahl der Lieferung",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipCountry",
+      "TranslatedValue": "Lieferland",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "List_btnFilter",
+      "TranslatedValue": "xApplyx",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnSave",
+      "TranslatedValue": "Speichern",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnDelete",
+      "TranslatedValue": "Löschen",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnOpenForm",
+      "TranslatedValue": "Bearbeiten",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnReload",
+      "TranslatedValue": "Reload",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupVisibility",
+      "TranslatedValue": "Filtern",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupSearch",
+      "TranslatedValue": "Suche",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "cbDateFilter",
+      "TranslatedValue": "xSelect Optionx",
+      "TranslationType": 1
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Fehler:",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Gespeichert",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Sind Sie sicher, dass Sie löschen möchten?",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirmCaption",
+      "TranslatedValue": "Bitte bestätigen",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Gelöscht",
+      "TranslationType": 2
+    }
+  ]
+}

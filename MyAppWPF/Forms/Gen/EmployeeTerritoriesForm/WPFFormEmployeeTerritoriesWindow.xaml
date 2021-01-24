@@ -1,0 +1,51 @@
+    <Page x:Class="MyApp.WPFForms.EmployeeTerritories.FormWPFEmployeeTerritories"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:local="clr-namespace:MyApp.WPFForms.EmployeeTerritories"
+                        mc:Ignorable="d"
+                        Title="EmployeeTerritories" Height="450" Width="800">
+
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+<RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Column="0" Grid.Row="0">
+                    <Label Content="{ Binding LabelsAndMessagesEmployeeTerritories.LabelsFromDBEmployeeTerritories.LabelEmployeeID}" />
+                    <TextBox Text="{ Binding modelNotifiedForEmployeeTerritoriesMain.EmployeeID, UpdateSourceTrigger = PropertyChanged}" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Grid.Row="0">
+                    <Label Content="{ Binding LabelsAndMessagesEmployeeTerritories.LabelsFromDBEmployeeTerritories.LabelTerritoryID}" />
+                    <TextBox Text="{ Binding modelNotifiedForEmployeeTerritoriesMain.TerritoryID, UpdateSourceTrigger = PropertyChanged}" />
+                </StackPanel>
+            </Grid>
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Column="0" Grid.Row="0">
+                            <Button x:Name="btnUpdate" Tag="btnUpdate" Content="{ Binding LabelsAndMessagesEmployeeTerritories.LanguageElementsControlsEmployeeTerritories.LabelBtnUpdate}" Click="btnUpdate_Click" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Grid.Row="0">
+                            <Button x:Name="btnDelete" Tag="btnDelete" Content="{ Binding LabelsAndMessagesEmployeeTerritories.LanguageElementsControlsEmployeeTerritories.LabelBtnDelete}" Click="btnDelete_Click" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="3" Grid.Row="0">
+                            <Button x:Name="btnNew" Tag="btnNew" Content="{ Binding LabelsAndMessagesEmployeeTerritories.LanguageElementsControlsEmployeeTerritories.LabelBtnNew}" Click="btnNew_Click" />
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+        </StackPanel>
+    </Page>

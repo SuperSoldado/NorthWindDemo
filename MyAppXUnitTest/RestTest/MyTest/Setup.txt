@@ -1,0 +1,19 @@
+﻿//Status code expected
+ExpectedStatusCode=200
+
+//Verb used
+VerbToUse=Get
+
+//Body and headers of this request
+BodyFile=MyBody.json
+HeaderFile=MyHeaders.txt
+
+//Body and headers expected
+BodyExpectedResponse=MyBodyExpectedResponse.json
+HeaderExpectedResponse=MyHeadersExpectedResponse.txt
+
+//saved body and headers
+OutputPath=Output
+
+//Basepath set in "LocalConfiguration.json"
+URL=[basepath]/WeatherForecast

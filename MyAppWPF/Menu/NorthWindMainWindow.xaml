@@ -1,0 +1,89 @@
+﻿<Window x:Class="MyAppWPF.NorthWind.NorthWindMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyAppWPF.NorthWind"
+        mc:Ignorable="d"
+        Title="NorthWindMainMenu" Height="700" Width="1000">
+    <Grid>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Column="0">
+
+            <Grid x:Name="LeftPanel">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <GroupBox Header="Lists" Margin="5" Grid.Column="0" Grid.Row="0">
+                    <StackPanel Orientation="Vertical">
+                        <Button Name="btnListRegion" Content="Region" Click="btnListRegion_Click"></Button>
+                        <Button Name="btnTerritoriesList"  Content="Territories" Click="btnTerritoriesList_Click"></Button>
+                        <Button Name="btnEmployeeTerritoriesList"  Content="EmployeeTerritories" Click="btnEmployeeTerritoriesList_Click"></Button>
+                        <Button Name="btnEmployeesList"  Content="Employees" Click="btnEmployeesList_Click"></Button>
+                        <Button Name="btnOrdersList"  Content="Orders" Click="btnOrdersList_Click"></Button>
+                        <Button Name="btnOrdersDetailsList"  Content="OrdersDetails" Click="btnOrdersDetailsList_Click"></Button>
+                        <Button Name="btnShippersList"  Content="Shippers" Click="btnShippersList_Click"></Button>
+                        <Button Name="btnProductsList"  Content="Products" Click="btnProductsList_Click"></Button>
+                        <Button Name="btnSuppliersList"  Content="Suppliers" Click="btnSuppliersList_Click"></Button>
+                        <Button Name="btnCategoriesList"  Content="Categories" Click="btnCategoriesList_Click"></Button>
+                        <Button Name="btnCustomerList"  Content="Customer" Click="btnCustomerList_Click"></Button>
+                        <Button Name="btnCustomerDemographics"  Content="CtmerDmgrphcs" Click="btnCustomerDemographics_Click"></Button>
+                        <Button Name="btnCustomerCustomerDemoList"  Content="CstmDemo" Click="btnCustomerCustomerDemoList_Click"></Button>                        
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Employees" Margin="5" Grid.Column="0" Grid.Row="1">
+                    <StackPanel Orientation="Vertical">
+                        <Button Name="btnMasterEmployees_DetailTerritories"  Content="Territories" Click="btnMasterEmployees_DetailTerritories_Click"></Button>
+                        <Button Name="btnMasterEmployees_DetailOrders"  Content="Orders" Click="btnMasterEmployees_DetailOrders_Click"></Button>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Orders" Margin="5" Grid.Column="0" Grid.Row="2">
+                    <StackPanel Orientation="Vertical">
+                        <Button Name="btnMasterOrderss_DetailOrderDetails" Content="Details" Click="btnMasterOrderss_DetailOrderDetails_Click"></Button>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="MasterDetail" Margin="5" Grid.Column="0" Grid.Row="3">
+                    <StackPanel Orientation="Vertical">
+                        <Button Name="btnRegionAndTerritories"  Content="Region/Territories" Click="btnRegionTerritories_Click"></Button>
+                    </StackPanel>
+                </GroupBox>
+                
+                <GroupBox Header="Test" Margin="5" Grid.Column="0" Grid.Row="4">
+                    <StackPanel Orientation="Vertical">
+                        <Button Name="btnList" Content="List Splited" Click="btnListSplited_Click"></Button>
+                        <Button Name="btnTerritoriesEmployeesRegions"  Content="* Terr./Emp.Reg." Click="btnTerritoriesEmployeesRegions_Click"></Button>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Config" Margin="5" Grid.Column="0" Grid.Row="5">
+                    <StackPanel Orientation="Vertical">
+                        <Button Name="btnConfig" Content="Config" Click="btnConfig_Click"></Button>
+                        <Button Name="btnTest" Content="Test" Click="btnTest_Click"></Button>
+                    </StackPanel>
+                </GroupBox>
+            </Grid>
+
+
+
+
+        </StackPanel>
+
+        <Frame Name="FramePlaceHolder" NavigationUIVisibility="Hidden" Grid.Column="1">
+        </Frame>
+
+    </Grid>
+</Window>

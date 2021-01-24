@@ -1,0 +1,23 @@
+﻿<Page x:Class="MyAppWPFLib.PageList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyAppWPFLib"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageList">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBox Name="txtNumberOfItens" Text="100"></TextBox>
+            <Button Name="btnRun" Content="Run" Click="btnRun_Click"></Button>
+        </StackPanel>
+        
+        <DataGrid Name="MyList" AutoGenerateColumns="True" Grid.Row="1"></DataGrid>
+    </Grid>
+</Page>

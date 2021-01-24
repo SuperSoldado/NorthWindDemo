@@ -1,0 +1,134 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "SupplierID",
+      "TranslatedValue": "xSupplierIDx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "CompanyName",
+      "TranslatedValue": "xCompanyNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ContactName",
+      "TranslatedValue": "xContactNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ContactTitle",
+      "TranslatedValue": "xContactTitlex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Address",
+      "TranslatedValue": "xAddressx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "City",
+      "TranslatedValue": "xCityx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Region",
+      "TranslatedValue": "xRegionx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PostalCode",
+      "TranslatedValue": "xPostalCodex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Country",
+      "TranslatedValue": "xCountryx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Phone",
+      "TranslatedValue": "xPhonex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Fax",
+      "TranslatedValue": "xFaxx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HomePage",
+      "TranslatedValue": "xHomePagex",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "List_btnFilter",
+      "TranslatedValue": "xApplyx",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnSave",
+      "TranslatedValue": "xSavex",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnDelete",
+      "TranslatedValue": "xDeletex",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnOpenForm",
+      "TranslatedValue": "xOpenx",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnReload",
+      "TranslatedValue": "xReloadx",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupVisibility",
+      "TranslatedValue": "xFiltersx",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupSearch",
+      "TranslatedValue": "xSearchx",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "cbDateFilter",
+      "TranslatedValue": "xSelect Optionx",
+      "TranslationType": 1
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "xErrorx",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "xSavedx",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "xAre you sure?x",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirmCaption",
+      "TranslatedValue": "xConfirmx",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "xDeletedx",
+      "TranslationType": 2
+    }
+  ]
+}

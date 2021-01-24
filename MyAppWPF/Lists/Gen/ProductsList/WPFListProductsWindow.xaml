@@ -1,0 +1,155 @@
+    <!--Track[0018] WPF_List_Window.html-->
+    <Page x:Class="MyApp.WPFList.Products.ListWPFProducts"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:local="clr-namespace:MyApp.WPFList.Products"
+                        mc:Ignorable="d"
+                        Title="Products">
+        <Grid Name="mainGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <GroupBox Name="groupVisibility" Header="{Binding WPFMessageAndLabelForList.LabelGroupVisibility}" Grid.Row="0" Margin="5,0,5,5">
+                <StackPanel Orientation="Horizontal">
+                    <GroupBox x:Name="groupSearch" Header="{Binding WPFMessageAndLabelForList.LabelGroupSearch}" Margin="5,0,5,5">
+                        <StackPanel Name="stackMainFilter" Orientation="Horizontal">
+                            <TextBox Name="txtFilter" Width="150" Margin="5,5,0,5"></TextBox>
+                            <Button Name="btnClearFilter" Content="X" Width="20" Click="btnFilter_Click" Margin="0,5,5,5"></Button>
+                        </StackPanel>
+                    </GroupBox>
+
+
+                    <GroupBox Margin="5,0,5,5">
+                        <StackPanel Name="stackButtons" HorizontalAlignment="Right" Orientation="Horizontal">
+                            <Button Name="btnFilter" Content="{Binding WPFMessageAndLabelForList.LabelBtnFilter}" Click="btnFilter_Click" Margin="12"></Button>
+                            <Button Name="btnReload" Content="{Binding WPFMessageAndLabelForList.LabelBtnReload}" Click="btnReload_Click" Margin="12"></Button>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </GroupBox>
+            <!-- ToDo: Refactor this part as separated template file. Now is in GenericList.cs-->
+            <DataGrid Name="DataGridProducts"
+                      Grid.Row="1"
+                      AutoGenerateColumns="False"
+                      AlternatingRowBackground="LightBlue"
+                      AlternationCount="2"
+                      VerticalAlignment="Top"
+                      HorizontalAlignment="Stretch"
+                      SelectionMode="Single"
+                      SelectionChanged="OnSelectionChanged"
+                      PreviewKeyDown="OnPreviewKeyDown"
+                      DataGridCell.Selected="OnDataGridCell_Selected"
+                      RowEditEnding="OnRowEditEnding">
+                <DataGrid.Columns>
+
+                    <!-- Begin PK Column ProductID-->
+                    <DataGridTextColumn IsReadOnly="True" Header="ProductID" Binding="{ Binding ProductID, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column ProductID-->
+                    <!-- Begin Column ProductName-->
+                    <DataGridTextColumn Header="ProductName" Binding="{ Binding ProductName, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column ProductName-->
+                    <!-- Begin Column Products.SupplierID -> Suppliers.SupplierID -->
+                    <DataGridTemplateColumn Header="Suppliers.CompanyName">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox Margin="0" Width="100"
+                                      ItemsSource="{Binding Path=ProductsDataContext.modelNotifiedForSuppliers_ComboItemSource, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Page}}}"
+                                      SelectedValuePath="SupplierID"
+                                      SelectedValue="{Binding SupplierID,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                                      
+                                      DisplayMemberPath="CompanyName">
+                                <ComboBox.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <VirtualizingStackPanel 
+                                            VirtualizingStackPanel.VirtualizationMode="Recycling" CanHorizontallyScroll="True">                                            
+                                        </VirtualizingStackPanel>
+                                    </ItemsPanelTemplate>
+                                </ComboBox.ItemsPanel>
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                    <!-- End Column SupplierID -->
+                    <!-- Begin Column Products.CategoryID -> Categories.CategoryID -->
+                    <DataGridTemplateColumn Header="Categories.CategoryName">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox Margin="0" Width="100"
+                                      ItemsSource="{Binding Path=ProductsDataContext.modelNotifiedForCategories_ComboItemSource, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Page}}}"
+                                      SelectedValuePath="CategoryID"
+                                      SelectedValue="{Binding CategoryID,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                                      
+                                      DisplayMemberPath="CategoryName">
+                                <ComboBox.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <VirtualizingStackPanel 
+                                            VirtualizingStackPanel.VirtualizationMode="Recycling" CanHorizontallyScroll="True">                                            
+                                        </VirtualizingStackPanel>
+                                    </ItemsPanelTemplate>
+                                </ComboBox.ItemsPanel>
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                    <!-- End Column CategoryID -->
+                    <!-- Begin Column QuantityPerUnit-->
+                    <DataGridTextColumn Header="QuantityPerUnit" Binding="{ Binding QuantityPerUnit, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column QuantityPerUnit-->
+                    <!-- Begin Column UnitPrice-->
+                    <DataGridTextColumn Header="UnitPrice" Binding="{ Binding UnitPrice, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column UnitPrice-->
+                    <!-- Begin Column UnitsInStock-->
+                    <DataGridTextColumn Header="UnitsInStock" Binding="{ Binding UnitsInStock, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column UnitsInStock-->
+                    <!-- Begin Column UnitsOnOrder-->
+                    <DataGridTextColumn Header="UnitsOnOrder" Binding="{ Binding UnitsOnOrder, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column UnitsOnOrder-->
+                    <!-- Begin Column ReorderLevel-->
+                    <DataGridTextColumn Header="ReorderLevel" Binding="{ Binding ReorderLevel, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column ReorderLevel-->
+                    <!-- Begin Column Discontinued-->
+                    <DataGridTemplateColumn Header="Discontinued">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding Discontinued, UpdateSourceTrigger=PropertyChanged}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <!-- End column Discontinued-->
+
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Button Click="OpenFormClick">Details</Button>-->
+                                <Button Click="OpenFormClick" Content="{Binding Path=ProductsDataContext.WPFMessageAndLabelForList.LabelBtnOpenForm,
+                                            RelativeSource={RelativeSource AncestorType={x:Type Page}}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Button Click="SaveClick">Save</Button>-->
+                                <Button Click="SaveClick" Content="{Binding Path=ProductsDataContext.WPFMessageAndLabelForList.LabelBtnSave,
+                                            RelativeSource={RelativeSource AncestorType={x:Type Page}}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Button Click="DeleteClick">Delete</Button>-->
+                                <Button Click="DeleteClick" Content="{Binding Path=ProductsDataContext.WPFMessageAndLabelForList.LabelBtnDelete,
+                                            RelativeSource={RelativeSource AncestorType={x:Type Page}}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+    </Page>

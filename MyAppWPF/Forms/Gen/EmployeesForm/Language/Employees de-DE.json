@@ -1,0 +1,134 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "EmployeeID",
+      "TranslatedValue": "xEmployeeIDx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "LastName",
+      "TranslatedValue": "xLastNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "FirstName",
+      "TranslatedValue": "xFirstNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Title",
+      "TranslatedValue": "xTitlex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "TitleOfCourtesy",
+      "TranslatedValue": "xTitleOfCourtesyx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "BirthDate",
+      "TranslatedValue": "xBirthDatex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HireDate",
+      "TranslatedValue": "xHireDatex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Address",
+      "TranslatedValue": "xAddressx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "City",
+      "TranslatedValue": "xCityx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Region",
+      "TranslatedValue": "xRegionx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PostalCode",
+      "TranslatedValue": "xPostalCodex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Country",
+      "TranslatedValue": "xCountryx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HomePhone",
+      "TranslatedValue": "xHomePhonex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Extension",
+      "TranslatedValue": "xExtensionx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Photo",
+      "TranslatedValue": "xPhotox",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Notes",
+      "TranslatedValue": "xNotesx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Employees_LastName",
+      "TranslatedValue": "xEmployees_LastNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PhotoPath",
+      "TranslatedValue": "xPhotoPathx",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "xbtnNewx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "xbtnDeletex",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "xbtnUpdatex",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "xSavedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "xErrorx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "xDeletedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "xAre you sure?x",
+      "TranslationType": 0
+    }
+  ]
+}

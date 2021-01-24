@@ -1,0 +1,129 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "CustomerID",
+      "TranslatedValue": "ID",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "CompanyName",
+      "TranslatedValue": "Firma",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ContactName",
+      "TranslatedValue": "Kontaktname",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ContactTitle",
+      "TranslatedValue": "Bezeichnung",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Address",
+      "TranslatedValue": "Adresse",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "City",
+      "TranslatedValue": "Stadt",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Region",
+      "TranslatedValue": "Region",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PostalCode",
+      "TranslatedValue": "Postleitzahl",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Country",
+      "TranslatedValue": "Land",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Phone",
+      "TranslatedValue": "Telefonnummer",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Fax",
+      "TranslatedValue": "Fax",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "List_btnFilter",
+      "TranslatedValue": "xApplyx",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnSave",
+      "TranslatedValue": "Speichern",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnDelete",
+      "TranslatedValue": "Löschen",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnOpenForm",
+      "TranslatedValue": "Bearbeiten",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnReload",
+      "TranslatedValue": "Reload",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupVisibility",
+      "TranslatedValue": "Filtern",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupSearch",
+      "TranslatedValue": "Suche",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "cbDateFilter",
+      "TranslatedValue": "xSelect Optionx",
+      "TranslationType": 1
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Fehler:",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Gespeichert",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Sind Sie sicher, dass Sie löschen möchten?",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirmCaption",
+      "TranslatedValue": "Bitte bestätigen",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Gelöscht",
+      "TranslationType": 2
+    }
+  ]
+}

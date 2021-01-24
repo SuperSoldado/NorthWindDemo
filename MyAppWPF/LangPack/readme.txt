@@ -1,0 +1,1 @@
+﻿Here contains static translations copied from autogen

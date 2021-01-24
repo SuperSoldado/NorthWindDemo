@@ -1,0 +1,49 @@
+﻿{
+  "GlobalConfiguration": {
+
+
+    "RESTConfig": {
+      "MainConnectionString": "DefaultConnectionString",
+      "ConnectionString": [
+        {
+          "Name": "DefaultConnectionString",
+          "Value": "Server=NB-FULLRICH-STG;Database=NorthwindDemo;User Id=sa;Password=sa;"
+        },        
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        }
+      ]
+    },
+
+    "UnitTestConfig": {
+      "BaseHttpsURL": "https://localhost:44393",
+      "BaseHttpURL": "http://localhost:44393",
+      "MainConnectionString": "DefaultConnectionString",
+      "ConnectionString": [
+        {
+          "Name": "DefaultConnectionString",
+          "Value": "Server=MyPC\\SQLEXPRESS17;Database=Northwind;User Id=sa; Password=sa;"
+        },
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        }
+      ]
+    },
+
+    "Other": {
+      "ConnectionString": [
+        {
+          "Name": "DGNB",
+          "Value": "Server=MyPC\\SQLEXPRESS17;Database=Northwind;User Id=sa; Password=sa;"
+        },
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        }
+      ]
+    }
+
+  }
+}

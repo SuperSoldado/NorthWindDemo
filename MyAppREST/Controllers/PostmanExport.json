@@ -1,0 +1,2424 @@
+{
+  "info": {
+    "_postman_id": "740bffee-3a89-471a-a30c-425db7d74575",
+    "name": "GenProject",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+{
+      "name": "Categories",
+      "item": [
+      {
+          "name": "GetAllXCategories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"CategoryID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Categories",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllCategories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"CategoryID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Categories",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateCategories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CategoryID\": 1,\"CategoryName\": \"NewCategoryName\",\"Description\": \"NewDescription\",\"Picture\": \"ToDoZZ:image\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Categories",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateCategories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CategoryID\": 1,\"CategoryName\": \"NewCategoryName\",\"Description\": \"NewDescription\",\"Picture\": \"ToDoZZ:image\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Categories",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteCategories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CategoryID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Categories",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "CustomerCustomerDemo",
+      "item": [
+      {
+          "name": "GetAllXCustomerCustomerDemo",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"CustomerID,CustomerTypeID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerCustomerDemo",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllCustomerCustomerDemo",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"CustomerID,CustomerTypeID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerCustomerDemo",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateCustomerCustomerDemo",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerID\": \"NewCustomerID\",\"CustomerTypeID\": \"NewCustomerTypeID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerCustomerDemo",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateCustomerCustomerDemo",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerID\": \"NewCustomerID\",\"CustomerTypeID\": \"NewCustomerTypeID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerCustomerDemo",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteCustomerCustomerDemo",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerID\": \"NewCustomerID\",\"CustomerTypeID\": \"NewCustomerTypeID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerCustomerDemo",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "CustomerDemographics",
+      "item": [
+      {
+          "name": "GetAllXCustomerDemographics",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"CustomerTypeID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerDemographics",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllCustomerDemographics",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"CustomerTypeID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerDemographics",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateCustomerDemographics",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerTypeID\": \"NewCustomerTypeID\",\"CustomerDesc\": \"NewCustomerDesc\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerDemographics",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateCustomerDemographics",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerTypeID\": \"NewCustomerTypeID\",\"CustomerDesc\": \"NewCustomerDesc\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerDemographics",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteCustomerDemographics",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerTypeID\": \"NewCustomerTypeID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "CustomerDemographics",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Customers",
+      "item": [
+      {
+          "name": "GetAllXCustomers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"CustomerID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Customers",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllCustomers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"CustomerID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Customers",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateCustomers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerID\": \"NewCustomerID\",\"CompanyName\": \"NewCompanyName\",\"ContactName\": \"NewContactName\",\"ContactTitle\": \"NewContactTitle\",\"Address\": \"NewAddress\",\"City\": \"NewCity\",\"Region\": \"NewRegion\",\"PostalCode\": \"NewPostalCode\",\"Country\": \"NewCountry\",\"Phone\": \"NewPhone\",\"Fax\": \"NewFax\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Customers",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateCustomers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerID\": \"NewCustomerID\",\"CompanyName\": \"NewCompanyName\",\"ContactName\": \"NewContactName\",\"ContactTitle\": \"NewContactTitle\",\"Address\": \"NewAddress\",\"City\": \"NewCity\",\"Region\": \"NewRegion\",\"PostalCode\": \"NewPostalCode\",\"Country\": \"NewCountry\",\"Phone\": \"NewPhone\",\"Fax\": \"NewFax\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Customers",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteCustomers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"CustomerID\": \"NewCustomerID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Customers",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Employees",
+      "item": [
+      {
+          "name": "GetAllXEmployees",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"EmployeeID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Employees",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllEmployees",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"EmployeeID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Employees",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateEmployees",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"EmployeeID\": 1,\"LastName\": \"NewLastName\",\"FirstName\": \"NewFirstName\",\"Title\": \"NewTitle\",\"TitleOfCourtesy\": \"NewTitleOfCourtesy\",\"BirthDate\": \"ToDoZZ:datetime\",\"HireDate\": \"ToDoZZ:datetime\",\"Address\": \"NewAddress\",\"City\": \"NewCity\",\"Region\": \"NewRegion\",\"PostalCode\": \"NewPostalCode\",\"Country\": \"NewCountry\",\"HomePhone\": \"NewHomePhone\",\"Extension\": \"NewExtension\",\"Photo\": \"ToDoZZ:image\",\"Notes\": \"NewNotes\",\"ReportsTo\": 1,\"PhotoPath\": \"NewPhotoPath\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Employees",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateEmployees",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"EmployeeID\": 1,\"LastName\": \"NewLastName\",\"FirstName\": \"NewFirstName\",\"Title\": \"NewTitle\",\"TitleOfCourtesy\": \"NewTitleOfCourtesy\",\"BirthDate\": \"ToDoZZ:datetime\",\"HireDate\": \"ToDoZZ:datetime\",\"Address\": \"NewAddress\",\"City\": \"NewCity\",\"Region\": \"NewRegion\",\"PostalCode\": \"NewPostalCode\",\"Country\": \"NewCountry\",\"HomePhone\": \"NewHomePhone\",\"Extension\": \"NewExtension\",\"Photo\": \"ToDoZZ:image\",\"Notes\": \"NewNotes\",\"ReportsTo\": 1,\"PhotoPath\": \"NewPhotoPath\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Employees",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteEmployees",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"EmployeeID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Employees",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "EmployeeTerritories",
+      "item": [
+      {
+          "name": "GetAllXEmployeeTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"EmployeeID,TerritoryID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "EmployeeTerritories",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllEmployeeTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"EmployeeID,TerritoryID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "EmployeeTerritories",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateEmployeeTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"EmployeeID\": 1,\"TerritoryID\": \"NewTerritoryID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "EmployeeTerritories",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateEmployeeTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"EmployeeID\": 1,\"TerritoryID\": \"NewTerritoryID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "EmployeeTerritories",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteEmployeeTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"EmployeeID\": 1,\"TerritoryID\": \"NewTerritoryID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "EmployeeTerritories",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "OrderDetails",
+      "item": [
+      {
+          "name": "GetAllXOrderDetails",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"OrderID,ProductID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "OrderDetails",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllOrderDetails",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"OrderID,ProductID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "OrderDetails",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateOrderDetails",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"OrderID\": 1,\"ProductID\": 1,\"UnitPrice\": 1,\"Quantity\": 1,\"Discount\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "OrderDetails",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateOrderDetails",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"OrderID\": 1,\"ProductID\": 1,\"UnitPrice\": 1,\"Quantity\": 1,\"Discount\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "OrderDetails",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteOrderDetails",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"OrderID\": 1,\"ProductID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "OrderDetails",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Orders",
+      "item": [
+      {
+          "name": "GetAllXOrders",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"OrderID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Orders",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllOrders",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"OrderID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Orders",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateOrders",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"OrderID\": 1,\"CustomerID\": \"NewCustomerID\",\"EmployeeID\": 1,\"OrderDate\": \"ToDoZZ:datetime\",\"RequiredDate\": \"ToDoZZ:datetime\",\"ShippedDate\": \"ToDoZZ:datetime\",\"ShipVia\": 1,\"Freight\": 1,\"ShipName\": \"NewShipName\",\"ShipAddress\": \"NewShipAddress\",\"ShipCity\": \"NewShipCity\",\"ShipRegion\": \"NewShipRegion\",\"ShipPostalCode\": \"NewShipPostalCode\",\"ShipCountry\": \"NewShipCountry\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Orders",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateOrders",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"OrderID\": 1,\"CustomerID\": \"NewCustomerID\",\"EmployeeID\": 1,\"OrderDate\": \"ToDoZZ:datetime\",\"RequiredDate\": \"ToDoZZ:datetime\",\"ShippedDate\": \"ToDoZZ:datetime\",\"ShipVia\": 1,\"Freight\": 1,\"ShipName\": \"NewShipName\",\"ShipAddress\": \"NewShipAddress\",\"ShipCity\": \"NewShipCity\",\"ShipRegion\": \"NewShipRegion\",\"ShipPostalCode\": \"NewShipPostalCode\",\"ShipCountry\": \"NewShipCountry\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Orders",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteOrders",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"OrderID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Orders",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Products",
+      "item": [
+      {
+          "name": "GetAllXProducts",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"ProductID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Products",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllProducts",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"ProductID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Products",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateProducts",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"ProductID\": 1,\"ProductName\": \"NewProductName\",\"SupplierID\": 1,\"CategoryID\": 1,\"QuantityPerUnit\": \"NewQuantityPerUnit\",\"UnitPrice\": 1,\"UnitsInStock\": 1,\"UnitsOnOrder\": 1,\"ReorderLevel\": 1,\"Discontinued\": \"ToDoZZ:bit\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Products",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateProducts",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"ProductID\": 1,\"ProductName\": \"NewProductName\",\"SupplierID\": 1,\"CategoryID\": 1,\"QuantityPerUnit\": \"NewQuantityPerUnit\",\"UnitPrice\": 1,\"UnitsInStock\": 1,\"UnitsOnOrder\": 1,\"ReorderLevel\": 1,\"Discontinued\": \"ToDoZZ:bit\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Products",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteProducts",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"ProductID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Products",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Region",
+      "item": [
+      {
+          "name": "GetAllXRegion",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"RegionID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Region",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllRegion",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"RegionID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Region",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateRegion",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"RegionID\": 1,\"RegionDescription\": \"NewRegionDescription\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Region",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateRegion",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"RegionID\": 1,\"RegionDescription\": \"NewRegionDescription\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Region",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteRegion",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"RegionID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Region",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Shippers",
+      "item": [
+      {
+          "name": "GetAllXShippers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"ShipperID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Shippers",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllShippers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"ShipperID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Shippers",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateShippers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"ShipperID\": 1,\"CompanyName\": \"NewCompanyName\",\"Phone\": \"NewPhone\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Shippers",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateShippers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"ShipperID\": 1,\"CompanyName\": \"NewCompanyName\",\"Phone\": \"NewPhone\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Shippers",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteShippers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"ShipperID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Shippers",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Suppliers",
+      "item": [
+      {
+          "name": "GetAllXSuppliers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"SupplierID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Suppliers",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllSuppliers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"SupplierID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Suppliers",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateSuppliers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"SupplierID\": 1,\"CompanyName\": \"NewCompanyName\",\"ContactName\": \"NewContactName\",\"ContactTitle\": \"NewContactTitle\",\"Address\": \"NewAddress\",\"City\": \"NewCity\",\"Region\": \"NewRegion\",\"PostalCode\": \"NewPostalCode\",\"Country\": \"NewCountry\",\"Phone\": \"NewPhone\",\"Fax\": \"NewFax\",\"HomePage\": \"NewHomePage\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Suppliers",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateSuppliers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"SupplierID\": 1,\"CompanyName\": \"NewCompanyName\",\"ContactName\": \"NewContactName\",\"ContactTitle\": \"NewContactTitle\",\"Address\": \"NewAddress\",\"City\": \"NewCity\",\"Region\": \"NewRegion\",\"PostalCode\": \"NewPostalCode\",\"Country\": \"NewCountry\",\"Phone\": \"NewPhone\",\"Fax\": \"NewFax\",\"HomePage\": \"NewHomePage\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Suppliers",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteSuppliers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"SupplierID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Suppliers",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Tag",
+      "item": [
+      {
+          "name": "GetAllXTag",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"TagID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Tag",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllTag",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"TagID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Tag",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateTag",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TagID\": 1,\"TextDesc\": \"NewTextDesc\",\"TagType\": \"NewTagType\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Tag",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateTag",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TagID\": 1,\"TextDesc\": \"NewTextDesc\",\"TagType\": \"NewTagType\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Tag",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteTag",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TagID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Tag",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "TagEmployee",
+      "item": [
+      {
+          "name": "GetAllXTagEmployee",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"TagEmployeeID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "TagEmployee",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllTagEmployee",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"TagEmployeeID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "TagEmployee",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateTagEmployee",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TagEmployeeID\": 1,\"EmployeeIDFK\": 1,\"TagFK\": 1,\"TagEmployeeTextDesc\": \"NewTagEmployeeTextDesc\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "TagEmployee",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateTagEmployee",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TagEmployeeID\": 1,\"EmployeeIDFK\": 1,\"TagFK\": 1,\"TagEmployeeTextDesc\": \"NewTagEmployeeTextDesc\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "TagEmployee",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteTagEmployee",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TagEmployeeID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "TagEmployee",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+,
+{
+      "name": "Territories",
+      "item": [
+      {
+          "name": "GetAllXTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"TerritoryID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAllX",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Territories",
+                "GetAllX"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "GetAllTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"NumberOfItens\": 10,\r\n    \"ItensToSkip\": 0,\r\n    \"orderby\": \"TerritoryID\",\r\n    \"Filters\": [\r\n        /*{\r\n            \"FieldName\": \"FieldName\",\r\n            \"Filter\": \"\",\r\n            \"FilterType\": \"Contains\"\r\n        }*/\r\n    ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/GetAll",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Territories",
+                "GetAll"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "CreateTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TerritoryID\": \"NewTerritoryID\",\"TerritoryDescription\": \"NewTerritoryDescription\",\"RegionID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Create",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Territories",
+                "Create"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "UpdateTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TerritoryID\": \"NewTerritoryID\",\"TerritoryDescription\": \"NewTerritoryDescription\",\"RegionID\": 1\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Update",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Territories",
+                "Update"
+              ]
+            }
+          },
+          "response": []
+      }
+      ,
+      {
+          "name": "DeleteTerritories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+             },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Data\": {\r\n        \"TerritoryID\": \"NewTerritoryID\"\r\n    }\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BasePath}}/Delete",
+              "host": [
+                "{{BasePath}}"
+              ],
+              "path": [
+                "Territories",
+                "Delete"
+              ]
+            }
+          },
+          "response": []
+      }
+      ],
+      "protocolProfileBehavior": {}
+}
+],
+  "protocolProfileBehavior": {}
+}

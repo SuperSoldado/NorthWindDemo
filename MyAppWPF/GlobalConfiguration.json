@@ -1,0 +1,144 @@
+﻿{
+  "GlobalConfiguration": {
+
+    "WPFConfig": {
+      "AppLanguage": "en-US",
+      "connectionType": "SQLServer",
+      "RESTBasePath": "https://localhost:44393",
+      "MainConnectionString": "DefaultConnectionString",
+      "ConnectionString": [        
+        {
+          "Name": "DefaultConnectionString",
+          "Value": "Server=NB-FULLRICH-STG;Database=NorthwindDemo;User Id=sa;Password=sa;"
+        },
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        }
+      ],
+      "ProjectFiles": [
+        {
+          "Description": "Default Script to create DB",
+          "Name": "DefaultDBScript",
+          "Value": "C:\\MyProjects\\NorthWindDemo\\MyAppDB\\Scripts\\CreateDB NorthWind.sql"
+        },
+        {
+          "Description": "",
+          "Name": "",
+          "Value": ""
+        }
+      ],
+      "AppFolders": [
+        {
+          "Name": "TempFolder",
+          "Description": "Temp folder. Used to save bin data from DB",
+          "Value": "c:\\Temp",
+          "AppFolderType": "Fixed"
+        },
+        {
+          "Name": "WPFFormLanguage",
+          "Description": "Used to read files from separated folder. Used to test translated static elements (not from GEN)",
+          "Value": "C:\\MyProjects\\NorthWindDemo\\MyAppWPF\\LangPack\\Forms",
+          "AppFolderType": "Dynamic"
+        },
+        {
+          "Name": "WPFListLanguage",
+          "Description": "Used to read files from separated folder. Used to test translated static elements (not from GEN)",
+          "Value": "C:\\MyProjects\\NorthWindDemo\\MyAppWPF\\LangPack\\Lists",
+          "AppFolderType": "Dynamic"
+        },
+        {
+          "Name": "WPFFormLanguage ORIGINAL: used to read files direct from GEN folder",
+          "Description": "Base path to read json Language",
+          "Value": "C:\\MyProjects\\MyApp\\MyApp\\MyAppWPF\\NorthWind\\Forms\\Gen\\{0}Form\\Language",
+          "AppFolderType": "Dynamic"
+        },
+        {
+          "Name": "WPFListLanguage ORIGINAL: used to read files direct from GEN folder",
+          "Description": "Base path to read json Language",
+          "Value": "C:\\MyProjects\\MyApp\\MyApp\\MyAppWPF\\NorthWind\\List\\Gen\\{0}List\\Language",
+          "AppFolderType": "Dynamic"
+        }
+      ]
+    },
+
+    "RESTConfig": {
+      "MainConnectionString": "DefaultConnectionString",
+      "ConnectionString": [
+        {
+          "Name": "DefaultConnectionString",
+          "Value": "Server=MyPc\\SQLEXPRESS17;Database=Northwind;User Id=sa; Password=sa;"
+        },
+        {
+          "Name": "DefaultConnectionStringXXX",
+          "Value": "Server=NB-FULLRICH-STG;Database=Northwind;User Id=sa;Password=sa;"
+        },
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        }
+      ],
+      "ProjectFiles": [
+        {
+          "Description": "example",
+          "Name": "example",
+          "Value": "C:\\x.txt"
+        },
+        {
+          "Description": "",
+          "Name": "",
+          "Value": ""
+        }
+      ],
+      "AppFolders": [
+        {
+          "Name": "TempFolder",
+          "Description": "Temp folder. Used to save bin data from DB",
+          "Value": "c:\\Temp",
+          "AppFolderType": "Fixed"
+        }
+      ]
+    },
+
+    "UnitTestConfig": {
+      "BaseHttpsURL": "https://localhost:44393",
+      "BaseHttpURL": "http://localhost:44393",
+      "MainConnectionString": "DefaultConnectionString",
+      "ProjectFiles": [
+        {
+          "Description": "example",
+          "Name": "example",
+          "Value": "C:\\x.txt"
+        },
+        {
+          "Description": "",
+          "Name": "",
+          "Value": ""
+        }
+      ],
+      "ConnectionString": [
+        {
+          "Name": "DefaultConnectionString",
+          "Value": "Server=MyPC\\SQLEXPRESS17;Database=Northwind;User Id=sa; Password=sa;"
+        },
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        }
+      ]
+    },
+
+    "Other": {
+      "ConnectionString": [
+        {
+          "Name": "DGNB",
+          "Value": "Server=MyPC\\SQLEXPRESS17;Database=Northwind;User Id=sa; Password=sa;"
+        },
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+    <!--Track[0018] WPF_List_Window.html-->
+    <Page x:Class="MyApp.WPFList.TagEmployee.ListWPFTagEmployee"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:local="clr-namespace:MyApp.WPFList.TagEmployee"
+                        mc:Ignorable="d"
+                        Title="TagEmployee">
+        <Grid Name="mainGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+            <GroupBox Name="groupVisibility" Header="{Binding WPFMessageAndLabelForList.LabelGroupVisibility}" Grid.Row="0" Margin="5,0,5,5">
+                <StackPanel Orientation="Horizontal">
+                    <GroupBox x:Name="groupSearch" Header="{Binding WPFMessageAndLabelForList.LabelGroupSearch}" Margin="5,0,5,5">
+                        <StackPanel Name="stackMainFilter" Orientation="Horizontal">
+                            <TextBox Name="txtFilter" Width="150" Margin="5,5,0,5"></TextBox>
+                            <Button Name="btnClearFilter" Content="X" Width="20" Click="btnFilter_Click" Margin="0,5,5,5"></Button>
+                        </StackPanel>
+                    </GroupBox>
+
+
+                    <GroupBox Margin="5,0,5,5">
+                        <StackPanel Name="stackButtons" HorizontalAlignment="Right" Orientation="Horizontal">
+                            <Button Name="btnFilter" Content="{Binding WPFMessageAndLabelForList.LabelBtnFilter}" Click="btnFilter_Click" Margin="12"></Button>
+                            <Button Name="btnReload" Content="{Binding WPFMessageAndLabelForList.LabelBtnReload}" Click="btnReload_Click" Margin="12"></Button>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </GroupBox>
+            <!-- ToDo: Refactor this part as separated template file. Now is in GenericList.cs-->
+            <DataGrid Name="DataGridTagEmployee"
+                      Grid.Row="1"
+                      AutoGenerateColumns="False"
+                      AlternatingRowBackground="LightBlue"
+                      AlternationCount="2"
+                      VerticalAlignment="Top"
+                      HorizontalAlignment="Stretch"
+                      SelectionMode="Single"
+                      SelectionChanged="OnSelectionChanged"
+                      PreviewKeyDown="OnPreviewKeyDown"
+                      DataGridCell.Selected="OnDataGridCell_Selected"
+                      RowEditEnding="OnRowEditEnding">
+                <DataGrid.Columns>
+
+                    <!-- Begin PK Column TagEmployeeID-->
+                    <DataGridTextColumn IsReadOnly="True" Header="TagEmployeeID" Binding="{ Binding TagEmployeeID, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column TagEmployeeID-->
+                    <!-- Begin Column TagEmployee.EmployeeIDFK -> Employees.EmployeeID -->
+                    <DataGridTemplateColumn Header="Employees.LastName">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox Margin="0" Width="100"
+                                      ItemsSource="{Binding Path=TagEmployeeDataContext.modelNotifiedForEmployees_ComboItemSource, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Page}}}"
+                                      SelectedValuePath="EmployeeID"
+                                      SelectedValue="{Binding EmployeeIDFK,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                                      
+                                      DisplayMemberPath="LastName">
+                                <ComboBox.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <VirtualizingStackPanel 
+                                            VirtualizingStackPanel.VirtualizationMode="Recycling" CanHorizontallyScroll="True">                                            
+                                        </VirtualizingStackPanel>
+                                    </ItemsPanelTemplate>
+                                </ComboBox.ItemsPanel>
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                    <!-- End Column EmployeeIDFK -->
+                    <!-- Begin Column TagEmployee.TagFK -> Tag.TagID -->
+                    <DataGridTemplateColumn Header="Tag.TextDesc">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox Margin="0" Width="100"
+                                      ItemsSource="{Binding Path=TagEmployeeDataContext.modelNotifiedForTag_ComboItemSource, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Page}}}"
+                                      SelectedValuePath="TagID"
+                                      SelectedValue="{Binding TagFK,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                                      
+                                      DisplayMemberPath="TextDesc">
+                                <ComboBox.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <VirtualizingStackPanel 
+                                            VirtualizingStackPanel.VirtualizationMode="Recycling" CanHorizontallyScroll="True">                                            
+                                        </VirtualizingStackPanel>
+                                    </ItemsPanelTemplate>
+                                </ComboBox.ItemsPanel>
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                    <!-- End Column TagFK -->
+                    <!-- Begin Column TagEmployeeTextDesc-->
+                    <DataGridTextColumn Header="TagEmployeeTextDesc" Binding="{ Binding TagEmployeeTextDesc, UpdateSourceTrigger=LostFocus}" />
+                    <!-- End column TagEmployeeTextDesc-->
+
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Button Click="OpenFormClick">Details</Button>-->
+                                <Button Click="OpenFormClick" Content="{Binding Path=TagEmployeeDataContext.WPFMessageAndLabelForList.LabelBtnOpenForm,
+                                            RelativeSource={RelativeSource AncestorType={x:Type Page}}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Button Click="SaveClick">Save</Button>-->
+                                <Button Click="SaveClick" Content="{Binding Path=TagEmployeeDataContext.WPFMessageAndLabelForList.LabelBtnSave,
+                                            RelativeSource={RelativeSource AncestorType={x:Type Page}}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Button Click="DeleteClick">Delete</Button>-->
+                                <Button Click="DeleteClick" Content="{Binding Path=TagEmployeeDataContext.WPFMessageAndLabelForList.LabelBtnDelete,
+                                            RelativeSource={RelativeSource AncestorType={x:Type Page}}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+    </Page>

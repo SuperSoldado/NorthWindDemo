@@ -1,0 +1,69 @@
+{
+  "Language": "pt-BR",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "Orders_ShipName",
+      "TranslatedValue": "Pedido",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Products_ProductName",
+      "TranslatedValue": "Produto",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitPrice",
+      "TranslatedValue": "Valor unitário",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Quantity",
+      "TranslatedValue": "Qtde",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Discount",
+      "TranslatedValue": "Desconto",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "Novo",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "Excluir",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "Salvar",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Salvo",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Erro",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Excluido",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Deseja excluir?",
+      "TranslationType": 0
+    }
+  ]
+}

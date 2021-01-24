@@ -1,0 +1,99 @@
+{
+  "Language": "pt-BR",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "CustomerID",
+      "TranslatedValue": "ID",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "CompanyName",
+      "TranslatedValue": "Empresa",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ContactName",
+      "TranslatedValue": "Contato",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ContactTitle",
+      "TranslatedValue": "Titulo",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Address",
+      "TranslatedValue": "Endereço",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "City",
+      "TranslatedValue": "Cidade",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Region",
+      "TranslatedValue": "Regiao",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PostalCode",
+      "TranslatedValue": "CEP",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Country",
+      "TranslatedValue": "País",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Phone",
+      "TranslatedValue": "Telefone",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Fax",
+      "TranslatedValue": "Fax",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "Novo",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "Excluir",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "Salvar",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Salvo",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Erro",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Excluido",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Deseja excluir?",
+      "TranslationType": 0
+    }
+  ]
+}

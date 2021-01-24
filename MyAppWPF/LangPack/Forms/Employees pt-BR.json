@@ -1,0 +1,134 @@
+{
+  "Language": "pt-BR",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "EmployeeID",
+      "TranslatedValue": "ID",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "LastName",
+      "TranslatedValue": "Sobrenome",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "FirstName",
+      "TranslatedValue": "Nome",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Title",
+      "TranslatedValue": "Título",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "TitleOfCourtesy",
+      "TranslatedValue": "Título",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "BirthDate",
+      "TranslatedValue": "Dt. Nasc",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HireDate",
+      "TranslatedValue": "Data contratacao",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Address",
+      "TranslatedValue": "Endereço",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "City",
+      "TranslatedValue": "Cidade",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Region",
+      "TranslatedValue": "Regiao",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PostalCode",
+      "TranslatedValue": "CEP",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Country",
+      "TranslatedValue": "País",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HomePhone",
+      "TranslatedValue": "Telefone",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Extension",
+      "TranslatedValue": "Extencao",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Photo",
+      "TranslatedValue": "Foro",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Notes",
+      "TranslatedValue": "Notas",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Employees_LastName",
+      "TranslatedValue": "Sobrenome Empregado",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PhotoPath",
+      "TranslatedValue": "Path imagem",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "Novo",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "Excluir",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "Salvar",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Salvo",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Erro",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Excluido",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Deseja excluir?",
+      "TranslationType": 0
+    }
+  ]
+}

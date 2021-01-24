@@ -1,0 +1,34 @@
+﻿<Window x:Class="MyAppWPFLib.frmPopUpSimpleList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyAppWPFLib"
+        mc:Ignorable="d"
+        Title="frmPopUpSimpleList" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0" Margin="0,0,0,0">
+            <Label Content="Filter"></Label>
+            <TextBox x:Name="txtFilter" Width="100" TextChanged="txtFilter_TextChanged"></TextBox>
+        </StackPanel>
+
+        <DockPanel Grid.Row="1" Margin="0,10,0,0">
+            <DataGrid x:Name="MyGrid"
+                      AutoGenerateColumns="True"
+                      AlternatingRowBackground="LightBlue"
+                      AlternationCount="2"
+                      VerticalAlignment="Top"
+                      HorizontalAlignment="Center"
+                      SelectionMode="Single">
+            </DataGrid>
+
+        </DockPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,81 @@
+﻿{
+  "GlobalConfiguration": {
+
+
+    "RESTConfig": {
+      "MainConnectionString": "DefaultConnectionString",
+      "ConnectionString": [
+        {
+          "Name": "DefaultConnectionStringX",
+          "Value": "Server=MyPC\\SQLExpress17;Database=Northwind;User Id=sa; Password=sa;"
+        },
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        },
+        {
+          "Name": "DefaultConnectionString",
+          "Value": "Server=NB-FULLRICH-STG;Database=Northwind;User Id=sa;Password=sa;"
+        }
+      ]
+    },
+
+    "UnitTestConfig": {
+      "BaseHttpsURL": "https://localhost:44393",
+      "BaseHttpURL": "http://localhost:44393",
+      "MainConnectionString": "DefaultConnectionString",
+      "ConnectionString": [
+        {
+          "Name": "DefaultConnectionStringX",
+          "Value": "Server=MyPC\\SQLExpress17;Database=Northwind;User Id=sa; Password=sa;",
+          "File": "Database\\NorthWind.sql",
+          "Description": "Connect to DB in unit test and perform CRUD operations"
+        },
+        {
+          "Name": "DefaultConnectionString",
+          "Value": "Server=NB-FULLRICH-STG;Database=Northwind;User Id=sa;Password=sa;",
+          "File": "Database\\NorthWind.sql",
+          "Description": "Connect to DB in unit test and perform CRUD operations"
+        },
+        {
+          "Name": "ResetDatabaseConnectionStringX",
+          "File": "",
+          "Value": "Server=MyPC\\SQLExpress17;Database=Northwind;User Id=sa; Password=sa;",
+          "Description": "Used to reset DB"
+        },
+        {
+          "Name": "ResetDatabaseConnectionString",
+          "File": "",
+          "Value": "Server=NB-FULLRICH-STG;Database=Northwind;User Id=sa;Password=sa;",
+          "Description": "Used to reset DB"
+        },
+        {
+          "Name": "DefaultConnectionStringVM",
+          "Value": "Server=MyPC\\SQLExpress17;Database=Northwind;User Id=sa; Password=sa;",
+          "File": "Database\\NorthWind.sql",
+          "Description": "Connect to DB in unit test and perform CRUD operations"
+        },
+        {
+          "Name": "other",
+          "File": "",
+          "Value": "Server=MyPC\\SQLExpress17;Database=dgnb_migration;User Id=sa; Password=sa;",
+          "Description": "other"
+        }
+      ]
+    },
+
+    "Other": {
+      "ConnectionString": [
+        {
+          "Name": "DGNB",
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=dgnb_migration;User Id=sa; Password=sa;"
+        },
+        {
+          "Name": "other",
+          "Value": "MyOtherCN"
+        }
+      ]
+    }
+
+  }
+}

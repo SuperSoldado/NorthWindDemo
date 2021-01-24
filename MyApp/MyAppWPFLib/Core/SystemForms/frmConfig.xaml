@@ -1,0 +1,112 @@
+﻿<Page x:Class="MyAppWPFLib.frmConfig"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="frmConfig">
+
+    <!--<Page.Resources> moved to app.xaml
+        <Style x:Key="StandardGroupBox" TargetType="{x:Type GroupBox}">
+            <Setter Property="Foreground" Value="Blue" />
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" FontWeight="Bold"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>        
+    </Page.Resources>-->
+
+
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="0" Grid.Row="0" Margin="0,0,0,0">
+                <Button x:Name="btnSave" Content="Save" Click="btnSave_Click" ></Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="0" Margin="5,0,0,0">
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Grid.Row="0" Margin="5,0,0,0" Orientation="Vertical" VerticalAlignment="Bottom">
+            </StackPanel>
+
+            <StackPanel Grid.Column="3" Grid.Row="0" Margin="5,0,0,0">
+            </StackPanel>
+
+
+            <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Margin="0,5,0,0">
+                <TabControl>
+                    <!-- ************************* General Tab: ******************************************* -->
+                    <TabItem Header="General">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Column="0" Grid.Row="0" Margin="0,0,0,0">
+                                <Label Content="Current Language" />
+                                <ComboBox Name="cbLanguages" SelectedValue="{ Binding Path = WPFConfig.AppLanguage}">
+                                </ComboBox>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Grid.Row="0" Margin="5,0,0,0">
+                                <Label Content="Connection Type" />
+                                <ComboBox Name="cbConectionType" >
+                                </ComboBox>
+                            </StackPanel>
+                        </Grid>
+                    </TabItem>
+                    <!-- ************************** Paths Tab: ****************************************** -->
+                    <TabItem Header="App paths">
+                        <StackPanel>
+                            <Label Content="App paths" />
+                            <ItemsControl x:Name="itemControlFilePath" ItemsSource="{Binding WPFConfig.AppFolders}" >
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <GroupBox Margin="0,0,0,10" Style="{StaticResource StandardGroupBox}" Header="{Binding Name}" >
+                                            <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                                                <Label Content="{Binding Description}"/>
+                                                <Label Content="{Binding Value}"/>
+                                                <Button Name="btnOpenFolder" Content="Open Folder" Tag="{Binding Name}"  Click="btnOpenFolder_Click"></Button>
+                                            </StackPanel>
+                                        </GroupBox>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </TabItem>
+
+                    <TabItem Header="Databank">                             
+                        <StackPanel>
+                            <Label Content="Main Connection String" />
+                            <CheckBox x:Name="ShowPasswordCharsCheckBox" Content="Show password" 
+                                      Checked="ShowPasswordCharsCheckBox_Checked" 
+                                      Unchecked="ShowPasswordCharsCheckBox_Unchecked" />
+                            <TextBox x:Name="MyPassword" Visibility="Collapsed"
+                                Text="{ Binding WPFConfig.GetMainConnectionString, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}" />
+                            <Button x:Name="btnTestConnection" Content="Test Connection" Click="btnTestConnection_Click"></Button>
+                            <Button x:Name="btnResetDatabank" Content="Reset DB" Click="btnResetDatabank_Click"></Button>
+                        </StackPanel>
+                    </TabItem>
+                </TabControl>
+
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Page>

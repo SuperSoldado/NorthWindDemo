@@ -1,0 +1,59 @@
+{
+  "Language": "fr-FR",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "TagID",
+      "TranslatedValue": "xTagIDx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "TextDesc",
+      "TranslatedValue": "xTextDescx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "TagType",
+      "TranslatedValue": "xTagTypex",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "xbtnNewx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "xbtnDeletex",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "xbtnUpdatex",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "xSavedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "xErrorx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "xDeletedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "xAre you sure?x",
+      "TranslationType": 0
+    }
+  ]
+}

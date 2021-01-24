@@ -1,0 +1,114 @@
+{
+  "Language": "en-US",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "OrderID",
+      "TranslatedValue": "xOrderIDx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Customers_ContactName",
+      "TranslatedValue": "xCustomers_ContactNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Employees_LastName",
+      "TranslatedValue": "xEmployees_LastNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "OrderDate",
+      "TranslatedValue": "xOrderDatex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "RequiredDate",
+      "TranslatedValue": "xRequiredDatex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShippedDate",
+      "TranslatedValue": "xShippedDatex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Shippers_CompanyName",
+      "TranslatedValue": "xShippers_CompanyNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Freight",
+      "TranslatedValue": "xFreightx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipName",
+      "TranslatedValue": "xShipNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipAddress",
+      "TranslatedValue": "xShipAddressx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipCity",
+      "TranslatedValue": "xShipCityx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipRegion",
+      "TranslatedValue": "xShipRegionx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipPostalCode",
+      "TranslatedValue": "xShipPostalCodex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipCountry",
+      "TranslatedValue": "xShipCountryx",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "xbtnNewx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "xbtnDeletex",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "xbtnUpdatex",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "xSavedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "xErrorx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "xDeletedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "xAre you sure?x",
+      "TranslationType": 0
+    }
+  ]
+}

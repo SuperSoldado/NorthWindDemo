@@ -1,0 +1,164 @@
+{
+  "Language": "pt-BR",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "EmployeeID",
+      "TranslatedValue": "ID",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "LastName",
+      "TranslatedValue": "Sobrenome",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "FirstName",
+      "TranslatedValue": "Nome",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Title",
+      "TranslatedValue": "Titulo",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "TitleOfCourtesy",
+      "TranslatedValue": "Tratamento pessoal",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "BirthDate",
+      "TranslatedValue": "Dt Nasc.",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HireDate",
+      "TranslatedValue": "Contratado em",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Address",
+      "TranslatedValue": "Endereço",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "City",
+      "TranslatedValue": "Cidade",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Region",
+      "TranslatedValue": "Regiao",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PostalCode",
+      "TranslatedValue": "CEP",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Country",
+      "TranslatedValue": "País",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HomePhone",
+      "TranslatedValue": "Telefone",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Extension",
+      "TranslatedValue": "Extensao",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Photo",
+      "TranslatedValue": "Foto",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Notes",
+      "TranslatedValue": "Notas",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Employees_LastName",
+      "TranslatedValue": "Sobrenome Empregado",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PhotoPath",
+      "TranslatedValue": "Foto Path",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "List_btnFilter",
+      "TranslatedValue": "Aplicar",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnSave",
+      "TranslatedValue": "Salvar",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnDelete",
+      "TranslatedValue": "Excluir",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnOpenForm",
+      "TranslatedValue": "Abrir",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnReload",
+      "TranslatedValue": "Recarregar",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupVisibility",
+      "TranslatedValue": "Filtros",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupSearch",
+      "TranslatedValue": "Buscar",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "cbDateFilter",
+      "TranslatedValue": "Selecione",
+      "TranslationType": 1
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Erro",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Salvo",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Deseja mesmo excluir",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirmCaption",
+      "TranslatedValue": "Favor confirmar",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Excluído",
+      "TranslationType": 2
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "Language": "pt-BR",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "ProductID",
+      "TranslatedValue": "xProductIDx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ProductName",
+      "TranslatedValue": "xProductNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Suppliers_CompanyName",
+      "TranslatedValue": "xSuppliers_CompanyNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Categories_CategoryName",
+      "TranslatedValue": "xCategories_CategoryNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "QuantityPerUnit",
+      "TranslatedValue": "xQuantityPerUnitx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitPrice",
+      "TranslatedValue": "xUnitPricex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitsInStock",
+      "TranslatedValue": "xUnitsInStockx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitsOnOrder",
+      "TranslatedValue": "xUnitsOnOrderx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ReorderLevel",
+      "TranslatedValue": "xReorderLevelx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Discontinued",
+      "TranslatedValue": "xDiscontinuedx",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "xbtnNewx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "xbtnDeletex",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "xbtnUpdatex",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "xSavedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "xErrorx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "xDeletedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "xAre you sure?x",
+      "TranslationType": 0
+    }
+  ]
+}

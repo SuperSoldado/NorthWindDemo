@@ -1,0 +1,114 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "OrderID",
+      "TranslatedValue": "ID",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Customers_CompanyName",
+      "TranslatedValue": "Name des Kunden-Unternehmens",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Employees_LastName",
+      "TranslatedValue": "Mitarbeiter Nachname",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "OrderDate",
+      "TranslatedValue": "Bestelldatum",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "RequiredDate",
+      "TranslatedValue": "Erforderliches Datum",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShippedDate",
+      "TranslatedValue": "Versanddatum",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Shippers_CompanyName",
+      "TranslatedValue": "Shippers Firmenname",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Freight",
+      "TranslatedValue": "Fracht",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipName",
+      "TranslatedValue": "xShipNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipAddress",
+      "TranslatedValue": "Lieferadresse",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipCity",
+      "TranslatedValue": "Lieferstadt",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipRegion",
+      "TranslatedValue": "Lieferregion",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipPostalCode",
+      "TranslatedValue": "Postleitzahl der Lieferung",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ShipCountry",
+      "TranslatedValue": "Lieferland",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "Neu",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "Löschen",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "Aktualisieren",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Gespeichert",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Fehler",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Gelöscht",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Sind Sie Sicher?",
+      "TranslationType": 0
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "CustomerID",
+      "TranslatedValue": "xCustomerIDx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "CompanyName",
+      "TranslatedValue": "xCompanyNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ContactName",
+      "TranslatedValue": "xContactNamex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ContactTitle",
+      "TranslatedValue": "xContactTitlex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Address",
+      "TranslatedValue": "xAddressx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "City",
+      "TranslatedValue": "xCityx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Region",
+      "TranslatedValue": "xRegionx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PostalCode",
+      "TranslatedValue": "xPostalCodex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Country",
+      "TranslatedValue": "xCountryx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Phone",
+      "TranslatedValue": "xPhonex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Fax",
+      "TranslatedValue": "xFaxx",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "xbtnNewx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "xbtnDeletex",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "xbtnUpdatex",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "xSavedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "xErrorx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "xDeletedx",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "xAre you sure?x",
+      "TranslationType": 0
+    }
+  ]
+}

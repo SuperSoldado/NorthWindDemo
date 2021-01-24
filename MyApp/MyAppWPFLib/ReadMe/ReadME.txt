@@ -1,0 +1,1 @@
+﻿This project contains libs used in "MyAppWPF"."MyAppWPF" is the only project to use this lib

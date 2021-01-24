@@ -1,0 +1,94 @@
+{
+  "Language": "pt-BR",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "ProductID",
+      "TranslatedValue": "ID",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ProductName",
+      "TranslatedValue": "Nome",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Suppliers_CompanyName",
+      "TranslatedValue": "Fornecedor",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Categories_CategoryName",
+      "TranslatedValue": "Categoria",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "QuantityPerUnit",
+      "TranslatedValue": "Qtde Por Unidade",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitPrice",
+      "TranslatedValue": "Valor unitario",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitsInStock",
+      "TranslatedValue": "Qtde em Estoque",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitsOnOrder",
+      "TranslatedValue": "Unidades",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ReorderLevel",
+      "TranslatedValue": "xReorderLevelx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Discontinued",
+      "TranslatedValue": "xDiscontinuedx",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "Novo",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "Excluir",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "Salvar",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Salvo",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Erro",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Excluido",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Deseja excluir?",
+      "TranslationType": 0
+    }
+  ]
+}

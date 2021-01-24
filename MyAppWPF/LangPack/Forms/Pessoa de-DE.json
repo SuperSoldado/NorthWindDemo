@@ -1,0 +1,59 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "id",
+      "TranslatedValue": "xidx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Nome",
+      "TranslatedValue": "xNomex",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "TipoDePessoas_NomeTipoPessoa",
+      "TranslatedValue": "xTipoDePessoas_NomeTipoPessoax",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "Neu",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "Löschen",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "Aktualisieren",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Gespeichert",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Fehler",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Gelöscht",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Sind Sie Sicher?",
+      "TranslationType": 0
+    }
+  ]
+}

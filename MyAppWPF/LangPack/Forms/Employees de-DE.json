@@ -1,0 +1,134 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "EmployeeID",
+      "TranslatedValue": "xEmployeeIDx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "LastName",
+      "TranslatedValue": "Nachname",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "FirstName",
+      "TranslatedValue": "Vorname",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Title",
+      "TranslatedValue": "Title",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "TitleOfCourtesy",
+      "TranslatedValue": "Titel der Höflichkeit",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "BirthDate",
+      "TranslatedValue": "Geburtstag",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HireDate",
+      "TranslatedValue": "Anstellungsdatum",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Address",
+      "TranslatedValue": "Adresse",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "City",
+      "TranslatedValue": "Stadt",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Region",
+      "TranslatedValue": "Region",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PostalCode",
+      "TranslatedValue": "Postleitzahl",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Country",
+      "TranslatedValue": "Land",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "HomePhone",
+      "TranslatedValue": "Telefonnummer",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Extension",
+      "TranslatedValue": "xExtensionx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Photo",
+      "TranslatedValue": "Bild",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Notes",
+      "TranslatedValue": "Anmerkungen",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Employees_LastName",
+      "TranslatedValue": "Mitarbeiter Nachname",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "PhotoPath",
+      "TranslatedValue": "Bild",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "btnNew",
+      "TranslatedValue": "Neu",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnDelete",
+      "TranslatedValue": "Löschen",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "btnUpdate",
+      "TranslatedValue": "Aktualisieren",
+      "TranslationType": 0
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Gespeichert",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Fehler",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Gelöscht",
+      "TranslationType": 0
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Sind Sie Sicher?",
+      "TranslationType": 0
+    }
+  ]
+}

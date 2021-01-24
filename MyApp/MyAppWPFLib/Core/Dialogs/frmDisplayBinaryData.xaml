@@ -1,0 +1,20 @@
+﻿<Window x:Class="MyAppWPFLib.frmDisplayBinaryData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyAppWPFLib"
+        mc:Ignorable="d"
+        Title="frmDisplayBinaryData" Height="400" Width="300">
+    <Grid>
+        <StackPanel >
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="5,5,5,5" x:Name="btnClose" Content=" Close " Click="btnClose_Click"></Button>
+                <Button Margin="0,5,5,5" x:Name="btnSaveAs" Content=" Save as " Click="btnSaveAs_Click"></Button>
+                <Button Margin="0,5,5,5" x:Name="btnChange" Content=" Change " Click="btnChange_Click"></Button>
+            </StackPanel>
+            
+            <Image x:Name="imgMain" Margin="5,5,5,5" Stretch="Fill"  Source="{Binding BinData}"></Image>
+        </StackPanel>
+    </Grid>
+</Window>

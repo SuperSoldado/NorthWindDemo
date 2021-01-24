@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\HttpReponseHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Helpers\HttpReponseHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyAppDataAccessLib\MyAppDataAccessLib.csproj" />
+    <ProjectReference Include="..\MyAppGlobalLib\MyAppGlobalLib.csproj" />
+  </ItemGroup>
+
+  <!--Freddy: to run Dynamic.cs file-->
+  <ItemGroup>
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

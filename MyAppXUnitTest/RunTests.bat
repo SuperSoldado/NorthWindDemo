@@ -1,0 +1,1 @@
+dotnet.exe test MyAppXUnitTest.csproj --filter DisplayName~DbTest1_DatabaseCollection

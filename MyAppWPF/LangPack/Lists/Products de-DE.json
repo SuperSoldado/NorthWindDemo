@@ -1,0 +1,124 @@
+{
+  "Language": "de-DE",
+  "LanguageElementsFromDB": [
+    {
+      "OriginalValue": "ProductID",
+      "TranslatedValue": "ID",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ProductName",
+      "TranslatedValue": "Name",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Suppliers_CompanyName",
+      "TranslatedValue": "Lieferant",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Categories_CategoryName",
+      "TranslatedValue": "Kategorie",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "QuantityPerUnit",
+      "TranslatedValue": "Menge pro Einheit",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitPrice",
+      "TranslatedValue": "Stückpreis",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitsInStock",
+      "TranslatedValue": "Einheiten auf Lager",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "UnitsOnOrder",
+      "TranslatedValue": "Einheiten in der Reihenfolge",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "ReorderLevel",
+      "TranslatedValue": "xReorderLevelx",
+      "TranslationType": 3
+    },
+    {
+      "OriginalValue": "Discontinued",
+      "TranslatedValue": "Eingestellt",
+      "TranslationType": 3
+    }
+  ],
+  "LanguageElementsDefaultControls": [
+    {
+      "OriginalValue": "List_btnFilter",
+      "TranslatedValue": "xApplyx",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnSave",
+      "TranslatedValue": "Speichern",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnDelete",
+      "TranslatedValue": "Löschen",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnOpenForm",
+      "TranslatedValue": "Bearbeiten",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "List_btnReload",
+      "TranslatedValue": "Reload",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupVisibility",
+      "TranslatedValue": "Filtern",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "groupSearch",
+      "TranslatedValue": "Suche",
+      "TranslationType": 1
+    },
+    {
+      "OriginalValue": "cbDateFilter",
+      "TranslatedValue": "xSelect Optionx",
+      "TranslationType": 1
+    }
+  ],
+  "LanguageElementsDefaultMessages": [
+    {
+      "OriginalValue": "MessageBoxSaveError",
+      "TranslatedValue": "Fehler:",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxSaveOK",
+      "TranslatedValue": "Gespeichert",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirm",
+      "TranslatedValue": "Sind Sie sicher, dass Sie löschen möchten?",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteConfirmCaption",
+      "TranslatedValue": "Bitte bestätigen",
+      "TranslationType": 2
+    },
+    {
+      "OriginalValue": "MessageBoxDeleteOK",
+      "TranslatedValue": "Gelöscht",
+      "TranslationType": 2
+    }
+  ]
+}

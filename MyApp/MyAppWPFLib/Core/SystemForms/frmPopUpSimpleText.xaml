@@ -1,0 +1,23 @@
+﻿<Window x:Class="MyAppWPFLib.Core.SystemForms.frmPopUpSimpleText"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyAppWPFLib.Core.SystemForms"
+        mc:Ignorable="d"
+        Title="frmPopUpSimpleText" Height="450" Width="800">
+    <Grid>
+        <DockPanel VerticalAlignment="Stretch" Height="Auto">
+            <DockPanel x:Name="stackHeader" DockPanel.Dock="Top">
+                <Button x:Name="btnSaveAndClose" Click="btnSaveAndClose_Click" Content="Save"></Button>
+            </DockPanel>
+            <DockPanel x:Name="stackBody">
+                <TextBox x:Name="txtText" FontSize="20" FontFamily="Courier New"
+                            TextWrapping="Wrap" 
+                            AcceptsReturn="True"
+                            VerticalScrollBarVisibility="Visible">                    
+                </TextBox>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</Window>
