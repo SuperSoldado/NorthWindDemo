@@ -8,16 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Menu IsMainMenu="True">
-            <MenuItem Header="_Dev Test">
-                <MenuItem Header="_NorthWind" Click="OpenNorthWind" >
-                </MenuItem>
-                <MenuItem Header="_MyMVVM" Click="OpenMyMVVM" >
-                </MenuItem>
-                <MenuItem Header="_TestSplitter" Click="OpenTestSplitter" >
+            <MenuItem Header="_NorthWindDemo">
+                <MenuItem Header="_Open App" Click="OpenNorthWind" >
                 </MenuItem>
             </MenuItem>            
 
-            <MenuItem Header="_Help" />
+            <MenuItem Header="_About" Click="About" />
         </Menu>
     </Grid>
 </Window>

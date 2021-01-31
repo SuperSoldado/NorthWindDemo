@@ -39,9 +39,6 @@
     <Page Update="Core\Legacy\ContainerWindowSimple.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Core\Legacy\MyMVVM.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Core\MyTestWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

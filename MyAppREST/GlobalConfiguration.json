@@ -7,7 +7,7 @@
       "ConnectionString": [
         {
           "Name": "DefaultConnectionString",
-          "Value": "Server=NB-FULLRICH-STG;Database=NorthwindDemo;User Id=sa;Password=sa;"
+          "Value": "Server=MyPC\\SQLEXPRESS17;Database=NorthwindDemo;User Id=sa;Password=sa;"
         },        
         {
           "Name": "other",

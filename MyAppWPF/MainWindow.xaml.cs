@@ -1,6 +1,5 @@
 ﻿
 using MyAppGlobalLib;
-using MyAppWPF.Forms;
 using MyAppWPF.NorthWind;
 using System;
 using System.Collections.Generic;
@@ -28,13 +27,7 @@ namespace MyAppWPF
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void OpenMyMVVM(object sender, RoutedEventArgs e)
-        {
-            MyMVVM win2 = new MyMVVM();
-            win2.Show();
-        }
+        }      
 
         private void OpenTestSplitter(object sender, RoutedEventArgs e)
         {
@@ -46,6 +39,14 @@ namespace MyAppWPF
         {
             NorthWindMainWindow win = new NorthWindMainWindow();
             win.Show();
+        }
+
+        private void About(object sender, RoutedEventArgs e)
+        {
+            string about = "Author: Freddy Ullrich" + Environment.NewLine +
+                "github.com/SuperSoldado/NorthWindDemo" + Environment.NewLine +
+                "LinkedIn: linkedin.com/in/freddyullrich/";
+            MessageBox.Show(about);
         }
     }
 }
