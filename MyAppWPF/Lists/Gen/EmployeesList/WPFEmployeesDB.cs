@@ -61,6 +61,7 @@ namespace MyApp.WPFList.Employees
                     {
                         newComboItem.Check_Status = false;
                     }
+                    newComboItem.ItemChanged = false;
                     comboItens.Add(newComboItem);
                 }
                 

@@ -45,7 +45,7 @@ namespace MyApp.WPFList.Employees
             SaveNxNComboFor_EmployeeTerritories(modelNotifiedForEmployees, out error);
 
         }
-        
+
         public void AddData(ModelNotifiedForEmployees modelNotifiedForEmployees, out string error)
         {
             EmployeesGenericREST EmployeesGenericREST = new EmployeesGenericREST(wpfConfig);
@@ -55,7 +55,7 @@ namespace MyApp.WPFList.Employees
         }
 
         public void DeleteData(ModelNotifiedForEmployees modelNotifiedForEmployees, out string error)
-        { 
+        {
             EmployeesGenericREST EmployeesGenericREST = new EmployeesGenericREST(wpfConfig);
             DeleteEmployeesView deleteEmployeesView = new DeleteEmployeesView();
             Cloner.CopyAllTo(typeof(ModelNotifiedForEmployees), modelNotifiedForEmployees, typeof(DeleteEmployeesView), deleteEmployeesView);
@@ -71,17 +71,17 @@ namespace MyApp.WPFList.Employees
             {
                 return null;
             }
-    
+
             //Initializing row status
             foreach (var item in modelNotifiedForEmployees)
             {
                 item.ItemChanged = false;
                 item.NewItem = false;
             }
-    
+
             return modelNotifiedForEmployees;
         }
-        
+
         /// <summary>
         /// Get all data to fill combo box
         /// </summary>
@@ -106,8 +106,8 @@ namespace MyApp.WPFList.Employees
             foreach (ModelNotifiedForEmployees item in dataContext.modelNotifiedForEmployeesMain)
             {
                 List<ModelNotifiedForEmployeeTerritories> listEmployeeTerritories = GetAllEmployeeTerritories(item.EmployeeID, out error);
-                List<ModelNotifiedForTerritories> comboItens = new List<ModelNotifiedForTerritories>();               
-                
+                List<ModelNotifiedForTerritories> comboItens = new List<ModelNotifiedForTerritories>();
+
                 foreach (ModelNotifiedForTerritories item2 in allTerritories)
                 {
                     ModelNotifiedForEmployeeTerritories aux = listEmployeeTerritories.Where(x => x.TerritoryID == item2.TerritoryID).FirstOrDefault();
@@ -122,9 +122,10 @@ namespace MyApp.WPFList.Employees
                     {
                         newComboItem.Check_Status = false;
                     }
+                    newComboItem.ItemChanged = false;
                     comboItens.Add(newComboItem);
                 }
-                
+
                 item.LookDownComboDataTerritories = comboItens.OrderBy(x => x.TerritoryDescription).ToList();
             }
         }
@@ -137,13 +138,13 @@ namespace MyApp.WPFList.Employees
             foreach (ModelNotifiedForTerritories item in modelNotifiedForEmployees.LookDownComboDataTerritories)
             {
                 if (item.ItemChanged)
-                {                    
+                {
                     if (item.Check_Status)
                     {
                         CreateEmployeeTerritoriesView itemToAdd = new CreateEmployeeTerritoriesView();
                         //Setting NxN object to include/delete
-itemToAdd.EmployeeID = modelNotifiedForEmployees.EmployeeID;
-itemToAdd.TerritoryID = item.TerritoryID;
+                        itemToAdd.EmployeeID = modelNotifiedForEmployees.EmployeeID;
+                        itemToAdd.TerritoryID = item.TerritoryID;
 
                         EmployeeTerritoriesGenericREST.Insert(itemToAdd, out error);
                     }
@@ -151,8 +152,8 @@ itemToAdd.TerritoryID = item.TerritoryID;
                     {
                         DeleteEmployeeTerritoriesView itemToDelete = new DeleteEmployeeTerritoriesView();
                         //Setting NxN object to include/delete
-itemToDelete.EmployeeID = modelNotifiedForEmployees.EmployeeID;
-itemToDelete.TerritoryID = item.TerritoryID;
+                        itemToDelete.EmployeeID = modelNotifiedForEmployees.EmployeeID;
+                        itemToDelete.TerritoryID = item.TerritoryID;
 
                         EmployeeTerritoriesGenericREST.Delete(itemToDelete, out error);
                     }
@@ -161,7 +162,7 @@ itemToDelete.TerritoryID = item.TerritoryID;
                     {
                         return;
                     }
-                    
+
                     item.ItemChanged = false;
                 }
             }
@@ -176,8 +177,8 @@ itemToDelete.TerritoryID = item.TerritoryID;
             List<DataFilterExpressionREST> dataFilterExpressionRESTList = new List<DataFilterExpressionREST>();
             DataFilterExpressionREST dataFilterExpressionREST = null;
             dataFilterExpressionREST = new DataFilterExpressionREST();
-            dataFilterExpressionREST.FieldName= "EmployeeID";
-            dataFilterExpressionREST.FilterType= DataFilterExpressionREST._FilterType.Equal;
+            dataFilterExpressionREST.FieldName = "EmployeeID";
+            dataFilterExpressionREST.FilterType = DataFilterExpressionREST._FilterType.Equal;
             dataFilterExpressionREST.Filter = EmployeeID.ToString();
             dataFilterExpressionRESTList.Add(dataFilterExpressionREST);
 
@@ -186,13 +187,13 @@ itemToDelete.TerritoryID = item.TerritoryID;
             {
                 return null;
             }
-    
+
             //Initializing row status
             foreach (var item in modelNotifiedForEmployeeTerritories)
             {
                 item.ItemChanged = false;
             }
-    
+
             return modelNotifiedForEmployeeTerritories;
             return null;
         }
@@ -210,13 +211,13 @@ itemToDelete.TerritoryID = item.TerritoryID;
             {
                 return null;
             }
-    
+
             //Initializing row status
             foreach (var item in modelNotifiedForTerritories)
             {
                 item.ItemChanged = false;
             }
-    
+
             return modelNotifiedForTerritories;
         }
         #endregion
