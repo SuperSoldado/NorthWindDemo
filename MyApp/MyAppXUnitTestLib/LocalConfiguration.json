@@ -7,7 +7,7 @@
       "ConnectionString": [
         {
           "Name": "DefaultConnectionStringX",
-          "Value": "Server=MyPC\\SQLExpress17;Database=Northwind;User Id=sa; Password=sa;"
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=Northwind;User Id=sa; Password=sa;"
         },
         {
           "Name": "other",
@@ -27,7 +27,7 @@
       "ConnectionString": [
         {
           "Name": "DefaultConnectionStringX",
-          "Value": "Server=MyPC\\SQLExpress17;Database=Northwind;User Id=sa; Password=sa;",
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=Northwind;User Id=sa; Password=sa;",
           "File": "Database\\NorthWind.sql",
           "Description": "Connect to DB in unit test and perform CRUD operations"
         },
@@ -40,7 +40,7 @@
         {
           "Name": "ResetDatabaseConnectionStringX",
           "File": "",
-          "Value": "Server=MyPC\\SQLExpress17;Database=Northwind;User Id=sa; Password=sa;",
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=Northwind;User Id=sa; Password=sa;",
           "Description": "Used to reset DB"
         },
         {
@@ -51,14 +51,14 @@
         },
         {
           "Name": "DefaultConnectionStringVM",
-          "Value": "Server=MyPC\\SQLExpress17;Database=Northwind;User Id=sa; Password=sa;",
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=Northwind;User Id=sa; Password=sa;",
           "File": "Database\\NorthWind.sql",
           "Description": "Connect to DB in unit test and perform CRUD operations"
         },
         {
           "Name": "other",
           "File": "",
-          "Value": "Server=MyPC\\SQLExpress17;Database=dgnb_migration;User Id=sa; Password=sa;",
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=dgnb_migration;User Id=sa; Password=sa;",
           "Description": "other"
         }
       ]

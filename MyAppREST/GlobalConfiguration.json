@@ -7,7 +7,7 @@
       "ConnectionString": [
         {
           "Name": "DefaultConnectionString",
-          "Value": "Server=MyPC\\SQLEXPRESS17;Database=NorthwindDemo;User Id=sa;Password=sa;"
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=NorthwindDemo;User Id=sa;Password=sa;"
         },        
         {
           "Name": "other",
@@ -23,7 +23,7 @@
       "ConnectionString": [
         {
           "Name": "DefaultConnectionString",
-          "Value": "Server=MyPC\\SQLEXPRESS17;Database=Northwind;User Id=sa; Password=sa;"
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=Northwind;User Id=sa; Password=sa;"
         },
         {
           "Name": "other",
@@ -36,7 +36,7 @@
       "ConnectionString": [
         {
           "Name": "DGNB",
-          "Value": "Server=MyPC\\SQLEXPRESS17;Database=Northwind;User Id=sa; Password=sa;"
+          "Value": "Server=WIN16\\SQLEXPRESS;Database=Northwind;User Id=sa; Password=sa;"
         },
         {
           "Name": "other",
